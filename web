@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Vapers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .product img {
+            max-width: 100px;
+            height: auto;
+        }
+        .product-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+        .btn-buy {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-buy:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda de Vapers</h1>
+        <div class="product">
+            <img src="vaper1.jpg" alt="Vaper Modelo 1">
+            <div class="product-info">
+                <h2>Vaper Modelo 1</h2>
+                <p>Precio: $50</p>
+                <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet justo rhoncus.</p>
+                <button class="btn-buy" onclick="comprar('Vaper Modelo 1', 50)">Comprar</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="vaper2.jpg" alt="Vaper Modelo 2">
+            <div class="product-info">
+                <h2>Vaper Modelo 2</h2>
+                <p>Precio: $60</p>
+                <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sit amet justo rhoncus.</p>
+                <button class="btn-buy" onclick="comprar('Vaper Modelo 2', 60)">Comprar</button>
+            </div>
+        </div>
+        <!-- Puedes añadir más modelos de vapers aquí -->
+
+        <script>
+            function comprar(nombre, precio) {
+                alert(`¡Has comprado ${nombre} por $${precio}!`);
+                // Aquí podrías agregar la lógica para procesar la transacción, como enviar datos a una API de pago, etc.
+            }
+        </script>
+    </div>
+</body>
+</html>
